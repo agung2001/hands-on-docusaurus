@@ -1,0 +1,7 @@
+# IDEs
+/.idea
+/.vscode
+
+# Vendords
+/vendors
+/node_modules
