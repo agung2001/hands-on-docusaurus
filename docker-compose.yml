@@ -1,0 +1,19 @@
+version: '3'
+services:
+
+  webserver:
+    container_name: docusaurus
+    image: agung2001/docusaurus:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    working_dir: /app/docusaurus
+    command: "yarn start --host 0.0.0.0"
+    ports:
+      - ${DOCU_PORT-80}:3000
+    networks:
+      - docusaurus
+
+networks:
+  docusaurus:

@@ -5,3 +5,7 @@
 # Vendords
 /vendors
 /node_modules
+
+# Environment
+.env
+.env.*
